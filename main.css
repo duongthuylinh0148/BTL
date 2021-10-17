@@ -215,10 +215,10 @@ body {
     font-size: 18px;
     padding: 15px 80px 5px 80px;
     list-style-type: none;
-    display: inline-block;
+    float:left;
 }
 #content .contact .ticket-list li > input[type=text]{
-    width: 350px;
+    width: 400px;
     border-radius: 4px;
     color: black;
     margin-left: 30px;
