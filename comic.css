@@ -7,7 +7,7 @@
 body {
     font-family:  'Segoe UI', Tahoma, Geneva,Verdana, sans-serif;
     background: #E2E2E2;
-    padding: 0px 40px 1px 40px;
+    padding: 0px 100px 1px 100px;
     height: 2000px;
 }
 /*đặt kích thước của trang chính*/
@@ -155,7 +155,7 @@ body {
 #slider img{
     background: top center / cover no-repeat;
     width:100%;
-/*     height: 800px; */
+    height: 550px;
     opacity: 0.6;
 
 }
@@ -196,15 +196,23 @@ body {
     float:left;
     width: 20%;
     height: 520px;
+
 }
 #content .content-release .release-box img{
     width: 100%;
     display: block;
     padding: 0 8px;
+    position: relative;
 }
 #content .content-release .release-box img:hover{
     opacity:0.6;
+    animation: release 5s infinite;  
 }
+@keyframes release{
+    0%{top: -10px;}
+    100%{left: 0;}
+}
+
 #content .content-release .release-box p{
     text-align: center;
     color:rgb(66, 64, 64);
@@ -225,7 +233,7 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     padding: 10px 10px;
-    margin-left: 630px;
+    margin-left: 570px;
     border-radius: 5px;
     color: rgb(240, 234, 234);
     border: none;
@@ -250,9 +258,15 @@ body {
     width: 100%;
     display: block;
     padding: 0 8px;
+    position: relative;
 }
 #content .content-bestsell .bestsell-box img:hover{
     opacity:0.6;
+    animation: release 5s infinite;  
+}
+@keyframes bestsell{
+    0%{top: -10px;}
+    100%{left: 0;}
 }
 #content .content-bestsell .bestsell-box p{
     text-align: center;
@@ -274,11 +288,12 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     padding: 10px 10px;
-    margin-left: 630px;
+    margin-left: 570px;
     border-radius: 5px;
     color: rgb(240, 234, 234);
     border: none;
 }
+
 /*footer*/
 #footer {
     color: white;
